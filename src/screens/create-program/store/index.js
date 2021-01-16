@@ -15,10 +15,6 @@ class DayStore {
   @observable _finishHour = null
   @observable _finishMinute = null
 
-  
-
-  @observable selectedLessonIndex = null
-  
   @observable
   schedule = [
     { // day start

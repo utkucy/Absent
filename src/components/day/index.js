@@ -44,7 +44,11 @@ class SetDayProgram extends React.Component {
           </DaySelectContainer>
           <LessonsContainer>
             <ScrollView>
-              {DayStore.selectedDay.lessons.map((lesson, index) => ( 
+              {DayStore.selectedDay.lessons
+              .sort((a,b) => {
+                return (a.startHour > b.startHour) ? 1 : ((a.startHour < b.startHour) ? -1 : 0)
+              })
+              .map((lesson, index) => ( 
               <React.Fragment key={index}>
                 <LectureCard updatedIndex={index} lecture={lesson}/>
               </React.Fragment>
@@ -66,7 +70,7 @@ class SetDayProgram extends React.Component {
           }
 
           {!!DayStore.isAddLecturePopupVisible &&
-            <SaveLecture/>
+            <SaveLecture updatedLesson={false}/>
           }
         </Container>
       

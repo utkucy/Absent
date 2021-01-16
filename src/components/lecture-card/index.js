@@ -26,7 +26,7 @@ class LectureCard extends React.Component {
     DayStore.deleteSelectedLesson(index)
   }
 
-  leftButton = () => {
+  d = () => {
     return([
     <TouchableOpacity 
     style={{ backgroundColor: 'rgb(171,34,94)', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', height: 121 }}

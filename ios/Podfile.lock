@@ -131,6 +131,9 @@ PODS:
     - React-Core (= 0.60.5)
   - React-RCTWebSocket (0.60.5):
     - React-Core (= 0.60.5)
+  - RNFBApp (0.3.0):
+    - Firebase/Core (~> 6.5.0)
+    - React
   - RNGestureHandler (1.3.0):
     - React
   - RNReanimated (1.2.0):
@@ -161,13 +164,14 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - boost-for-react-native
     - Firebase
     - FirebaseAnalytics
@@ -218,6 +222,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
+  RNFBApp:
+    :path: "../node_modules/@react-native-firebase/app"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -256,6 +262,7 @@ SPEC CHECKSUMS:
   React-RCTText: b074d89033583d4f2eb5faf7ea2db3a13c7553a2
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
+  RNFBApp: 298bdbc96f0cc79e3a8004136b83a2da500b7379
   RNGestureHandler: 5329a942fce3d41c68b84c2c2276ce06a696d8b0
   RNReanimated: 1b52415c4302f198cb581282a0166690bad62c43
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
@@ -263,4 +270,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: fd09986460c49d5feca22001c0bffd6c34080a37
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

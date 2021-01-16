@@ -6,7 +6,6 @@ import { Header, Left, Right, Icon } from 'native-base'
 
 import Sidebar from '../../components/sidebar/index'
 import SetDayProgram from '../../components/day/index'
-import SaveLecture from '../../components/save-lecture/index'
 import DayStore from './store/index'
 
 
